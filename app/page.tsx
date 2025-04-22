@@ -159,9 +159,10 @@ export default function HomePage() {
               scale: 0.5 + Math.random() * 1.5,
             }}
             animate={{
-              y: window.innerHeight + 50,
-              x: Math.sin(i) * 200 + Math.random() * window.innerWidth,
+              y: "100vh",
+              rotate: 360,
               opacity: 0,
+              scale: 0.5 + Math.random() * 1.5,
             }}
             transition={{
               duration: 15 + Math.random() * 30,
