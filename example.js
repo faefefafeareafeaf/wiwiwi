@@ -4,6 +4,7 @@ export default function ExampleComponent() {
   const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
+    // Ensure this code runs only on the client side
     if (typeof window !== 'undefined') {
       const handleResize = () => setWindowWidth(window.innerWidth);
       handleResize(); // Set initial width
